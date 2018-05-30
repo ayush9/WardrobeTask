@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                tools:context="com.example.root.wardrobetask.ui.OnboardingAddShirtsActivity">
+
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:id="@+id/onboarding_pants_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_pants"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/preference_pants_question_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="@string/prefer_bottoms"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/onboarding_gender_positive_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:textColor="@color/colorAccent"/>
+
+            <Button
+                android:id="@+id/onboarding_gender_negative_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nah"
+                android:textColor="@color/colorAccent"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- TODO Check if RecyclerView shows on real device -->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pants_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/onboarding_pants_footer_container"
+        android:layout_below="@+id/onboarding_pants_header_container"/>
+
+    <LinearLayout
+        android:id="@+id/onboarding_pants_footer_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:elevation="24dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/add_pants_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:elevation="@dimen/fab_elevation"
+                android:src="@drawable/ic_add_white_24dp"
+                app:fabSize="normal"
+                app:pressedTranslationZ="@dimen/fab_press_translation_z"/>
+
+        </LinearLayout>
+
+        <!-- TODO Download proper camera icon -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/onboarding_pants_next_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/shirts_fab"
+                android:text="@string/done"
+                android:textColor="@color/colorAccent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

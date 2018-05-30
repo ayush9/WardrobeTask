@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.root.wardrobetask">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+
+    <application
+        android:name=".WardrobeApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/wardrobe_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.OnboardingWelcomeActivity"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".ui.OnboardingAddShirtsActivity"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".ui.OnboardingAddPantsActivity"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:configChanges="orientation"
+            android:label="@string/action_settings" />
+
+        <receiver android:name=".util.AlarmReceiver" />
+
+        <activity android:name=".ui.FavoriteCollectionActivity"></activity>
+    </application>
+
+</manifest>

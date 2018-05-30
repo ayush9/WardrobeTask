@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Wardrobe</string>
+    <string name="favorites">Favorite Collection</string>
+
+    <!-- Introduction screens -->
+    <string name="hi">Hi</string>
+    <string name="welcome_message">Welcome to Wordrobe! Never let your fashion look stale - Wardrobe generates random and exciting combinations from the clothes you already own!</string>
+    <string name="getting_start">Let\'s get started by adding a few clothes to your collection</string>
+    <string name="add_shirts">First,let\'s add some shirts!</string>
+    <string name="prefer_tops">Or do you prefer "tops"?</string>
+    <string name="add_pants">Nice style! Now for some pants</string>
+    <string name="prefer_bottoms">Or do you  prefer "bottoms"?</string>
+    <string name="yes">YES</string>
+    <string name="nah">NAH</string>
+    <string name="done">I\'M DONE</string>
+    <string name="start">Let\'s Start</string>
+
+    <!-- Settings Screen -->
+    <string name="wardrobe_ready">Your wardrobe can be ready when you begin the day, would you like to be notified each morning?</string>
+    <string name="wardrobe_funny_text">Unfortunately that\'s all we can do right now, making you coffee is still quite a ways away</string>
+
+    <string name="add_photo_title">Add Photo</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="notification_text">Today\'s Wardrobe is ready! Come have a look</string>
+
+    <string name="favorite_confirmation">This combo DOES look nice, added to favorites!</string>
+    <string name="favorite_err">Uh, you have to add some clothes first!</string>
+
+
+
+    <string-array name="image_options">
+        <item>Take Photo</item>
+        <item>Choose From Gallery</item>
+        <item>Cancel</item>
+    </string-array>
+
+</resources>
